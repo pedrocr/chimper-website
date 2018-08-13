@@ -1,10 +1,14 @@
 <html>
   <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     <div id="maincontent">
       <h1>Performance comparison of rust versions</h1>
+      <div id="description">
+This is a performance benchmark of the <a href="https://github.com/pedrocr/rawloader/">rawloader</a> rust crate across several rust versions. Rawloader reads most camera raw image formats and outputs a decompressed array of the individual pixel values. This benchmark tries to measure how the performance of different rust versions has impacted the performance of rawloader. See the <a href="methodology.html">methodology</a> for more details.
+      </div>
       <div id="plot">
         <img src="plot-versions.png">
       </div>
@@ -94,6 +98,9 @@
         </tr>
         
       </table>
+      <div id="copyright">
+        Copyright 2018 <a href="http://pedrocr.pt">Pedro Côrte-Real</a>
+      </div>
     </div>
   </body>
 </html>

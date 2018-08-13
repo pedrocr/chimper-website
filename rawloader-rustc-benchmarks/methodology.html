@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="maincontent">
+      <h1>Methodology</h1>
+      <div id="methodology">
+        I tried as much as possible to get stable and consistent benchmarking results. These are 
+        the main things I did to get there.
+
+        <h2>Benchmark itself</h2>
+        <ul>
+          <li>Version 0.34.0 of rawloader was used throughout the test</li>
+          <li>A set of 60 files from a broad set of cameras was chosen manually to try and exercise 
+              most types of decompression algorithm</li>
+          <li>Benchmarking is done by first loading the file into memory and only then benchmarking 50 iterations of decoding the file</li>
+          <li>All the file and rust version combinations were benchmarked three times in random order (to try to eliminate any systematic biases during the run)</li>
+          <li>Between every two runs a five second sleep was done to prevent themal throttling</li>
+        </ul>
+
+        <h2>Data aggregation</h2>
+        <ul>
+          <li>The value for each file and rust version combination is the median of the three runs</li>
+          <li>The comparisons are simply the ratio between the time of the two runs</li>
+          <li>The box plots were generated in R with the default boxplot() function</li>
+        </ul>
+
+        <h2>Test Machine</h2>
+        <ul>
+          <li>All benchmarks were run on a Lenovo T460s with a i5-6200U CPU</li>
+          <li>Benchmarks were ran overnight with no other user programs running</li>
+          <li>The CPU governor was set to performance during the runs</li>
+        </ul>
+
+      </div>
+      <div id="copyright">
+        Copyright 2018 <a href="http://pedrocr.pt">Pedro Côrte-Real</a>
+      </div>
+    </div>
+  </body>
+</html>
