@@ -16,13 +16,13 @@
           <li>A set of 60 files from a broad set of cameras was chosen manually to try and exercise 
               most types of decompression algorithm. All the sample files are available at <a href="http://raw.pixls.us/">raw.pixls.us</a></li>
           <li>Benchmarking is done by first loading the file into memory and only then benchmarking 50 iterations of decoding the file</li>
-          <li>All the file and rust version combinations were benchmarked three times in random order (to try to eliminate any systematic biases during the run)</li>
-          <li>Between every two runs a five second sleep was done to prevent thermal throttling</li>
+          <li>All the file and rust version combinations were benchmarked five times in random order (to try to eliminate any systematic biases during the run)</li>
+          <li>Between every two runs a one second sleep was done to prevent thermal throttling</li>
         </ul>
 
         <h2>Data aggregation</h2>
         <ul>
-          <li>The value for each file and rust version combination is the median of the three runs</li>
+          <li>The value for each file and rust version combination is the median of the five runs</li>
           <li>The comparisons are simply the ratio between the time of the two runs</li>
           <li>The box plots were generated in R with the default boxplot() function</li>
         </ul>
