@@ -5,7 +5,7 @@
   </head>
   <body>
     <div id="maincontent">
-      <h1>Performance analysis of rust 1.29.2</h1>
+      <h1>Performance analysis of rust 1.29.2 (17a9dc751 2018-10-05)</h1>
       <div id="description">
 This is the comparison of a specific rust version with the one just before as well as the first version tested.
       </div>
@@ -22,34 +22,27 @@ This is the comparison of a specific rust version with the one just before as we
         
         <tr>
           <td class="name">RAW_SAMSUNG_NX300.SRW</td>
-          <td class="value">195</td>
+          <td class="value">196</td>
           <td class="value great">0.65</td>
           <td class="value bad">1.01</td>
         </tr>
         
         <tr>
           <td class="name">RAW_KODAK_DCSPRO.DCR</td>
-          <td class="value">160</td>
+          <td class="value">161</td>
           <td class="value great">0.83</td>
-          <td class="value good">1.00</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_SONY_SLT-A77V.ARW</td>
-          <td class="value">71</td>
-          <td class="value good">0.90</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_SONY_RX100M5.ARW</td>
+          <td class="name">RAW_SONY_DSC-RX100M2.ARW</td>
           <td class="value">59</td>
           <td class="value good">0.90</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_SONY_DSC-RX100M2.ARW</td>
+          <td class="name">RAW_SONY_RX100M5.ARW</td>
           <td class="value">59</td>
           <td class="value good">0.90</td>
           <td class="value good">0.99</td>
@@ -63,6 +56,13 @@ This is the comparison of a specific rust version with the one just before as we
         </tr>
         
         <tr>
+          <td class="name">RAW_SONY_SLT-A77V.ARW</td>
+          <td class="value">72</td>
+          <td class="value good">0.90</td>
+          <td class="value good">0.98</td>
+        </tr>
+        
+        <tr>
           <td class="name">DSC_6796_Df14uncompr.NEF</td>
           <td class="value">17</td>
           <td class="value good">0.90</td>
@@ -71,23 +71,16 @@ This is the comparison of a specific rust version with the one just before as we
         
         <tr>
           <td class="name">IMGP6917.PEF</td>
-          <td class="value">241</td>
+          <td class="value">242</td>
           <td class="value good">0.91</td>
           <td class="value good">0.97</td>
         </tr>
         
         <tr>
           <td class="name">IMGP0956.PEF</td>
-          <td class="value">106</td>
+          <td class="value">107</td>
           <td class="value good">0.92</td>
           <td class="value good">0.97</td>
-        </tr>
-        
-        <tr>
-          <td class="name">DSC_0982.NEF</td>
-          <td class="value">283</td>
-          <td class="value good">0.92</td>
-          <td class="value good">0.99</td>
         </tr>
         
         <tr>
@@ -95,6 +88,13 @@ This is the comparison of a specific rust version with the one just before as we
           <td class="value">119</td>
           <td class="value good">0.92</td>
           <td class="value good">0.98</td>
+        </tr>
+        
+        <tr>
+          <td class="name">DSC_0982.NEF</td>
+          <td class="value">285</td>
+          <td class="value good">0.92</td>
+          <td class="value good">0.99</td>
         </tr>
         
         <tr>
@@ -108,12 +108,12 @@ This is the comparison of a specific rust version with the one just before as we
           <td class="name">DSC_6794_Df12losslesscompr.NEF</td>
           <td class="value">193</td>
           <td class="value good">0.93</td>
-          <td class="value good">0.99</td>
+          <td class="value good">0.98</td>
         </tr>
         
         <tr>
           <td class="name">DSC_6797_Df14losslesscompr.NEF</td>
-          <td class="value">196</td>
+          <td class="value">197</td>
           <td class="value good">0.93</td>
           <td class="value good">0.99</td>
         </tr>
@@ -127,14 +127,14 @@ This is the comparison of a specific rust version with the one just before as we
         
         <tr>
           <td class="name">RAW_APTUS_75.MOS</td>
-          <td class="value">296</td>
+          <td class="value">297</td>
           <td class="value good">0.93</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="name">645D2840.PEF</td>
-          <td class="value">679</td>
+          <td class="value">681</td>
           <td class="value good">0.93</td>
           <td class="value good">0.98</td>
         </tr>
@@ -143,26 +143,19 @@ This is the comparison of a specific rust version with the one just before as we
           <td class="name">RAW_NIKON_D80_SRGB.NEF</td>
           <td class="value">124</td>
           <td class="value good">0.93</td>
-          <td class="value good">0.99</td>
+          <td class="value good">0.98</td>
+        </tr>
+        
+        <tr>
+          <td class="name">SAM_5548.SRW</td>
+          <td class="value">10</td>
+          <td class="value good">0.94</td>
+          <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="name">_DSC1066.ARW</td>
-          <td class="value">22</td>
-          <td class="value good">0.94</td>
-          <td class="value good">1.00</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_PENTAX_STARISTD_SRGB.PEF</td>
-          <td class="value">6</td>
-          <td class="value good">0.94</td>
-          <td class="value good">1.00</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_LEICA_DLUX3.RAW</td>
-          <td class="value">10</td>
+          <td class="value">23</td>
           <td class="value good">0.94</td>
           <td class="value good">1.00</td>
         </tr>
@@ -175,10 +168,24 @@ This is the comparison of a specific rust version with the one just before as we
         </tr>
         
         <tr>
+          <td class="name">RAW_LEICA_VLUX1.RAW</td>
+          <td class="value">9</td>
+          <td class="value good">0.95</td>
+          <td class="value good">1.00</td>
+        </tr>
+        
+        <tr>
           <td class="name">IMG_2207.CR2</td>
           <td class="value">222</td>
           <td class="value good">0.95</td>
           <td class="value good">0.99</td>
+        </tr>
+        
+        <tr>
+          <td class="name">RAW_LEICA_DLUX3.RAW</td>
+          <td class="value">11</td>
+          <td class="value good">0.95</td>
+          <td class="value good">1.00</td>
         </tr>
         
         <tr>
@@ -189,36 +196,29 @@ This is the comparison of a specific rust version with the one just before as we
         </tr>
         
         <tr>
-          <td class="name">SAM_5548.SRW</td>
-          <td class="value">10</td>
+          <td class="name">RAW_PENTAX_STARISTD_SRGB.PEF</td>
+          <td class="value">6</td>
           <td class="value good">0.95</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
-          <td class="name">IMG_0001.CR2</td>
-          <td class="value">283</td>
-          <td class="value good">0.95</td>
-          <td class="value good">0.99</td>
-        </tr>
-        
-        <tr>
           <td class="name">RAW_CANON_G10.CR2</td>
-          <td class="value">262</td>
+          <td class="value">263</td>
           <td class="value good">0.96</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
-          <td class="name">EOS_6D_RAW.CR2</td>
-          <td class="value">273</td>
+          <td class="name">IMG_0001.CR2</td>
+          <td class="value">286</td>
           <td class="value good">0.96</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="name">EOS_6D_mRAW.CR2</td>
-          <td class="value">400</td>
+          <td class="value">404</td>
           <td class="value good">0.96</td>
           <td class="value good">1.00</td>
         </tr>
@@ -227,84 +227,77 @@ This is the comparison of a specific rust version with the one just before as we
           <td class="name">IMG_3893.CR2</td>
           <td class="value">101</td>
           <td class="value good">0.96</td>
-          <td class="value good">1.00</td>
+          <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="name">IMG_0972.CR2</td>
-          <td class="value">275</td>
+          <td class="value">278</td>
           <td class="value good">0.96</td>
           <td class="value good">1.00</td>
+        </tr>
+        
+        <tr>
+          <td class="name">RAW_SAMSUNG_NX500.SRW</td>
+          <td class="value">391</td>
+          <td class="value good">0.96</td>
+          <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="name">RAW_KODAK_DCS560C.TIF</td>
           <td class="value">86</td>
           <td class="value good">0.96</td>
-          <td class="value bad">1.02</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_LEICA_VLUX1.RAW</td>
-          <td class="value">9</td>
-          <td class="value good">0.96</td>
           <td class="value bad">1.01</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_SAMSUNG_NX500.SRW</td>
-          <td class="value">390</td>
+          <td class="name">IMG_1428.CR2</td>
+          <td class="value">177</td>
           <td class="value good">0.96</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
-          <td class="name">IMG_1428.CR2</td>
-          <td class="value">175</td>
+          <td class="name">EOS_6D_RAW.CR2</td>
+          <td class="value">278</td>
           <td class="value good">0.97</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="name">D810_Small.NEF</td>
-          <td class="value">82</td>
+          <td class="value">83</td>
           <td class="value good">0.98</td>
           <td class="value good">0.97</td>
         </tr>
         
         <tr>
-          <td class="name">EOS_6D_sRAW.CR2</td>
-          <td class="value">186</td>
+          <td class="name">IMG_4047.CR2</td>
+          <td class="value">250</td>
           <td class="value good">0.98</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_HASSELBLAD_CFV.3FR</td>
-          <td class="value">297</td>
+          <td class="name">EOS_6D_sRAW.CR2</td>
+          <td class="value">188</td>
+          <td class="value good">0.98</td>
           <td class="value good">0.99</td>
-          <td class="value good">1.00</td>
-        </tr>
-        
-        <tr>
-          <td class="name">IMG_4047.CR2</td>
-          <td class="value">247</td>
-          <td class="value good">0.99</td>
-          <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="name">RAW_FUJI_S3PRO.RAF</td>
-          <td class="value">31</td>
+          <td class="value">32</td>
           <td class="value good">0.99</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_CANON_G5_SRGB.CRW</td>
-          <td class="value">147</td>
+          <td class="name">RAW_HASSELBLAD_CFV.3FR</td>
+          <td class="value">299</td>
+          <td class="value good">0.99</td>
           <td class="value good">1.00</td>
-          <td class="value bad">1.01</td>
         </tr>
         
         <tr>
@@ -315,24 +308,17 @@ This is the comparison of a specific rust version with the one just before as we
         </tr>
         
         <tr>
+          <td class="name">RAW_CANON_G5_SRGB.CRW</td>
+          <td class="value">148</td>
+          <td class="value good">1.00</td>
+          <td class="value bad">1.02</td>
+        </tr>
+        
+        <tr>
           <td class="name">P1000128.RW2</td>
-          <td class="value">67</td>
+          <td class="value">68</td>
           <td class="value bad">1.01</td>
           <td class="value good">0.99</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_OLYMPUS_E-450.ORF</td>
-          <td class="value">263</td>
-          <td class="value bad">1.01</td>
-          <td class="value good">0.97</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_SONY_A200.ARW</td>
-          <td class="value">164</td>
-          <td class="value bad">1.01</td>
-          <td class="value good">1.00</td>
         </tr>
         
         <tr>
@@ -340,6 +326,20 @@ This is the comparison of a specific rust version with the one just before as we
           <td class="value">56</td>
           <td class="value bad">1.01</td>
           <td class="value good">0.99</td>
+        </tr>
+        
+        <tr>
+          <td class="name">RAW_OLYMPUS_E-450.ORF</td>
+          <td class="value">264</td>
+          <td class="value bad">1.01</td>
+          <td class="value good">0.97</td>
+        </tr>
+        
+        <tr>
+          <td class="name">RAW_SONY_A200.ARW</td>
+          <td class="value">165</td>
+          <td class="value bad">1.01</td>
+          <td class="value bad">1.01</td>
         </tr>
         
         <tr>
@@ -351,7 +351,7 @@ This is the comparison of a specific rust version with the one just before as we
         
         <tr>
           <td class="name">H1130004.ORF</td>
-          <td class="value">410</td>
+          <td class="value">411</td>
           <td class="value bad">1.02</td>
           <td class="value good">1.00</td>
         </tr>
@@ -365,14 +365,14 @@ This is the comparison of a specific rust version with the one just before as we
         
         <tr>
           <td class="name">RAW_LEICA_M8.DNG</td>
-          <td class="value">17</td>
+          <td class="value">18</td>
           <td class="value ugly">1.14</td>
           <td class="value bad">1.02</td>
         </tr>
         
         <tr>
           <td class="name">RAW_NIKON_COOLPIX_P7100.NRW</td>
-          <td class="value">23</td>
+          <td class="value">24</td>
           <td class="value ugly">1.20</td>
           <td class="value bad">1.03</td>
         </tr>
@@ -380,7 +380,7 @@ This is the comparison of a specific rust version with the one just before as we
         <tr>
           <td class="name">RAW_NIKON_D1X.NEF</td>
           <td class="value">8</td>
-          <td class="value ugly">1.33</td>
+          <td class="value ugly">1.31</td>
           <td class="value good">0.97</td>
         </tr>
         
@@ -394,34 +394,34 @@ This is the comparison of a specific rust version with the one just before as we
         <tr>
           <td class="name">RAW_MAMIYA_ZD.MEF</td>
           <td class="value">30</td>
-          <td class="value ugly">1.34</td>
+          <td class="value ugly">1.33</td>
           <td class="value good">0.97</td>
-        </tr>
-        
-        <tr>
-          <td class="name">RAW_FUJI_FINPIX_F900EXR.RAF</td>
-          <td class="value">12</td>
-          <td class="value ugly">1.35</td>
-          <td class="value good">0.98</td>
         </tr>
         
         <tr>
           <td class="name">DSCF1442.RAF</td>
           <td class="value">24</td>
-          <td class="value ugly">1.35</td>
+          <td class="value ugly">1.34</td>
           <td class="value good">0.98</td>
         </tr>
         
         <tr>
-          <td class="name">RAW_FUJIFILM_HS20EXR.RAF</td>
+          <td class="name">RAW_FUJI_FINPIX_F900EXR.RAF</td>
           <td class="value">12</td>
-          <td class="value ugly">1.35</td>
+          <td class="value ugly">1.34</td>
           <td class="value good">0.98</td>
         </tr>
         
         <tr>
           <td class="name">RAW_SONY_A900.ARW</td>
           <td class="value">35</td>
+          <td class="value ugly">1.34</td>
+          <td class="value good">0.98</td>
+        </tr>
+        
+        <tr>
+          <td class="name">RAW_FUJIFILM_HS20EXR.RAF</td>
+          <td class="value">12</td>
           <td class="value ugly">1.35</td>
           <td class="value good">0.98</td>
         </tr>
@@ -436,7 +436,7 @@ This is the comparison of a specific rust version with the one just before as we
         <tr>
           <td class="name">RAW_NIKON_D100.NEF</td>
           <td class="value">10</td>
-          <td class="value ugly">1.48</td>
+          <td class="value ugly">1.47</td>
           <td class="value bad">1.03</td>
         </tr>
         
