@@ -10,119 +10,263 @@
 This is a performance benchmark of the <a href="https://github.com/pedrocr/rawloader/">rawloader</a> rust crate across several rust versions. Rawloader reads most camera raw image formats and outputs a decompressed array of the individual pixel values. This benchmark tries to measure how the performance of different rust versions has impacted the performance of rawloader. See the <a href="methodology.html">methodology</a> for more details.
       </div>
       <div id="plot">
-        <img src="plot-versions.png">
+        <img id="main" src="plot-versions.png">
       </div>
       <table>
         <tr>
           <th class="version">Version</th>
-          <th class="value">Total Time (seconds)</th>
-          <th class="value">Total Time <br/> versus First</th>
-          <th class="value">Total Time <br/>versus Previous</th>
+
+          <th class="value">Compile <br/>(seconds)</th>
+          <th class="value">Compile <br/>v. first</th>
+          <th class="value">Compile <br/>v. previous</th>
+
+          <th class="value">Size <br/>(kbytes)</th>
+          <th class="value">Size <br/>v. first</th>
+          <th class="value">Size <br/>v. previous</th>
+
+          <th class="value">Run <br/>(seconds)</th>
+          <th class="value">Run <br/>v. first</th>
+          <th class="value">Run <br/>v. previous</th>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.20.0.html">1.20.0</a></td>
-          <td class="value">9.08</td>
+          <td class="value">94.83</td>
+          <td class="value good">1.00</td>
+          <td class="value good">1.00</td>
+
+          <td class="value">4956</td>
+          <td class="value good">1.00</td>
+          <td class="value good">1.00</td>
+
+          <td class="value">9.01</td>
           <td class="value good">1.00</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.21.0.html">1.21.0</a></td>
-          <td class="value">8.70</td>
+          <td class="value">92.18</td>
+          <td class="value good">0.97</td>
+          <td class="value good">0.97</td>
+
+          <td class="value">5117</td>
+          <td class="value bad">1.03</td>
+          <td class="value bad">1.03</td>
+
+          <td class="value">8.62</td>
           <td class="value good">0.96</td>
           <td class="value good">0.96</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.22.1.html">1.22.1</a></td>
-          <td class="value">8.68</td>
+          <td class="value">88.10</td>
+          <td class="value good">0.93</td>
+          <td class="value good">0.96</td>
+
+          <td class="value">5058</td>
+          <td class="value bad">1.02</td>
+          <td class="value good">0.99</td>
+
+          <td class="value">8.61</td>
           <td class="value good">0.96</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.23.0.html">1.23.0</a></td>
-          <td class="value">8.66</td>
-          <td class="value good">0.95</td>
+          <td class="value">86.37</td>
+          <td class="value good">0.91</td>
+          <td class="value good">0.98</td>
+
+          <td class="value">5340</td>
+          <td class="value bad">1.08</td>
+          <td class="value bad">1.06</td>
+
+          <td class="value">8.60</td>
+          <td class="value good">0.96</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.24.1.html">1.24.1</a></td>
-          <td class="value">8.96</td>
-          <td class="value good">0.99</td>
-          <td class="value bad">1.04</td>
+          <td class="value">88.78</td>
+          <td class="value good">0.94</td>
+          <td class="value bad">1.03</td>
+
+          <td class="value">6499</td>
+          <td class="value ugly">1.31</td>
+          <td class="value ugly">1.22</td>
+
+          <td class="value">8.86</td>
+          <td class="value good">0.98</td>
+          <td class="value bad">1.03</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.25.0.html">1.25.0</a></td>
-          <td class="value">8.83</td>
+          <td class="value">91.89</td>
           <td class="value good">0.97</td>
+          <td class="value bad">1.04</td>
+
+          <td class="value">5915</td>
+          <td class="value ugly">1.19</td>
+          <td class="value good">0.91</td>
+
+          <td class="value">8.80</td>
           <td class="value good">0.98</td>
+          <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.26.2.html">1.26.2</a></td>
-          <td class="value">8.81</td>
+          <td class="value">93.77</td>
+          <td class="value good">0.99</td>
+          <td class="value bad">1.02</td>
+
+          <td class="value">6651</td>
+          <td class="value ugly">1.34</td>
+          <td class="value ugly">1.12</td>
+
+          <td class="value">8.75</td>
           <td class="value good">0.97</td>
-          <td class="value good">1.00</td>
+          <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.27.2.html">1.27.2</a></td>
-          <td class="value">8.81</td>
+          <td class="value">94.24</td>
+          <td class="value good">0.99</td>
+          <td class="value bad">1.01</td>
+
+          <td class="value">6749</td>
+          <td class="value ugly">1.36</td>
+          <td class="value bad">1.01</td>
+
+          <td class="value">8.75</td>
           <td class="value good">0.97</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.28.0.html">1.28.0</a></td>
-          <td class="value">8.73</td>
+          <td class="value">79.29</td>
+          <td class="value great">0.84</td>
+          <td class="value great">0.84</td>
+
+          <td class="value">5246</td>
+          <td class="value bad">1.06</td>
+          <td class="value great">0.78</td>
+
+          <td class="value">8.65</td>
           <td class="value good">0.96</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.29.2.html">1.29.2</a></td>
-          <td class="value">8.66</td>
+          <td class="value">84.98</td>
+          <td class="value good">0.90</td>
+          <td class="value bad">1.07</td>
+
+          <td class="value">5312</td>
+          <td class="value bad">1.07</td>
+          <td class="value bad">1.01</td>
+
+          <td class="value">8.58</td>
           <td class="value good">0.95</td>
           <td class="value good">0.99</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.30.1.html">1.30.1</a></td>
-          <td class="value">8.66</td>
-          <td class="value good">0.95</td>
+          <td class="value">81.46</td>
+          <td class="value great">0.86</td>
+          <td class="value good">0.96</td>
+
+          <td class="value">5167</td>
+          <td class="value bad">1.04</td>
+          <td class="value good">0.97</td>
+
+          <td class="value">8.61</td>
+          <td class="value good">0.96</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.31.1.html">1.31.1</a></td>
-          <td class="value">8.49</td>
-          <td class="value good">0.93</td>
+          <td class="value">89.56</td>
+          <td class="value good">0.94</td>
+          <td class="value ugly">1.10</td>
+
+          <td class="value">5213</td>
+          <td class="value bad">1.05</td>
+          <td class="value bad">1.01</td>
+
+          <td class="value">8.43</td>
+          <td class="value good">0.94</td>
           <td class="value good">0.98</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-1.32.0.html">1.32.0</a></td>
-          <td class="value">8.36</td>
+          <td class="value">75.88</td>
+          <td class="value great">0.80</td>
+          <td class="value great">0.85</td>
+
+          <td class="value">3573</td>
+          <td class="value great">0.72</td>
+          <td class="value great">0.69</td>
+
+          <td class="value">8.30</td>
           <td class="value good">0.92</td>
           <td class="value good">0.98</td>
         </tr>
         
         <tr>
+          <td class="version"><a href="version-1.33.0.html">1.33.0</a></td>
+          <td class="value">75.78</td>
+          <td class="value great">0.80</td>
+          <td class="value good">1.00</td>
+
+          <td class="value">3603</td>
+          <td class="value great">0.73</td>
+          <td class="value bad">1.01</td>
+
+          <td class="value">8.37</td>
+          <td class="value good">0.93</td>
+          <td class="value bad">1.01</td>
+        </tr>
+        
+        <tr>
           <td class="version"><a href="version-beta.html">beta</a></td>
-          <td class="value">8.36</td>
-          <td class="value good">0.92</td>
+          <td class="value">75.55</td>
+          <td class="value great">0.80</td>
+          <td class="value good">1.00</td>
+
+          <td class="value">2840</td>
+          <td class="value great">0.57</td>
+          <td class="value great">0.79</td>
+
+          <td class="value">8.33</td>
+          <td class="value good">0.93</td>
           <td class="value good">1.00</td>
         </tr>
         
         <tr>
           <td class="version"><a href="version-nightly.html">nightly</a></td>
-          <td class="value">8.43</td>
-          <td class="value good">0.93</td>
-          <td class="value bad">1.01</td>
+          <td class="value">74.31</td>
+          <td class="value great">0.78</td>
+          <td class="value good">0.98</td>
+
+          <td class="value">2836</td>
+          <td class="value great">0.57</td>
+          <td class="value good">1.00</td>
+
+          <td class="value">8.33</td>
+          <td class="value good">0.92</td>
+          <td class="value good">1.00</td>
         </tr>
         
       </table>

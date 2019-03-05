@@ -28,7 +28,7 @@ table {
 }
 
 .value {
-  width: 10em;
+  width: 7em;
   text-align: center;
 }
 
@@ -48,6 +48,10 @@ td {
 img {
   width: 50em;
   padding-bottom: 1em;
+}
+
+img#main {
+  width: 70em;
 }
 
 .great {
@@ -84,7 +88,7 @@ img {
 }
 
 #copyright {
-  width: 50em;
+  width: 70em;
   text-align: right;
   padding-top: 1em;
   border-top: 1px solid black;
